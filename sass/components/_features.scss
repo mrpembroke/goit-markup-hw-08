@@ -1,0 +1,52 @@
+/* Features Features Features*/
+
+.features-list {
+	display: flex;
+
+	.features-title {
+		margin-top: 30px;
+		margin-bottom: 10px;
+
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+
+	.features-text {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		color: $secondary-text-color;
+		font-size: 14px;
+		line-height: 1.71;
+	}
+}
+
+.rect {
+	text-align: center;
+
+	background-color: $secondary-bgc-color;
+	border-radius: 4px;
+
+	.icon-rect {
+		width: 70px;
+		height: 70px;
+		margin: 25px 102px;
+	}
+}
+
+.features-item {
+	width: calc((100% - 90px) / 4);
+
+	.features-img {
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 30px;
+		padding: 25px 100px;
+	}
+}
+
+.features-item + .features-item {
+	margin-left: 30px;
+}

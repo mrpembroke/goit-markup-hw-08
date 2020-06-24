@@ -1,0 +1,121 @@
+.logo-header {
+	color: $accent-color;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+
+	.color {
+		color: #000000;
+	}
+}
+
+.main-header {
+	display: flex;
+	align-items: center;
+
+	border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
+.main-address {
+	margin-left: auto;
+}
+
+/* Site-nav Site-nav Site-nav*/
+
+.site-nav {
+	display: flex;
+	margin-left: 80px;
+
+	.nav-item + .nav-item {
+		margin-left: 50px;
+	}
+}
+
+.site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: inherit;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color 250ms $timing-function;
+
+	&:hover,
+	&:focus,
+	&.current {
+		color: $accent-color;
+	}
+}
+
+.current {
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		background-color: $accent-color;
+		border-radius: 2px;
+	}
+}
+
+/* Address Address Address*/
+
+.header-link {
+	color: $secondary-text-color;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color 250ms $timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.icon-mailto {
+	fill: $secondary-text-color;
+	transition: fill 250ms $timing-function;
+
+	.header-link:hover &,
+	.header-link:focus & {
+		fill: $accent-color;
+	}
+}
+
+.icon-phoneto {
+	fill: $secondary-text-color;
+	transition: fill 250ms $timing-function;
+
+	.header-link:hover &,
+	.header-link:focus & {
+		fill: $accent-color;
+	}
+}
+
+.address-header {
+	display: flex;
+
+	.address-item + .address-item {
+		margin-left: 30px;
+	}
+}

@@ -1,0 +1,107 @@
+.logo-footer {
+	color: $accent-color;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 1.18;
+	text-decoration: none;
+
+	.color {
+		color: $third-text-color;
+	}
+}
+
+.footer-link {
+	color: rgba(255, 255, 255, 0.6);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color 250ms $timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.page-footer {
+	height: 252px;
+	color: $third-text-color;
+	background-color: $footer-bgc-color;
+
+	.title {
+		margin-top: 0;
+	}
+
+	.text {
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.71;
+	}
+
+	.footer-section {
+		padding-top: 60px;
+	}
+}
+
+.footer-section .sec-address {
+	width: 230px;
+}
+.main-footer {
+	display: flex;
+	padding-bottom: 28px;
+}
+
+.media {
+	margin-top: 72px;
+	margin-left: 69px;
+
+	.media-list {
+		display: flex;
+
+		.media-item + .media-item {
+			margin-left: 10px;
+		}
+	}
+}
+
+.socials-title {
+	margin-top: 0;
+	margin-bottom: 21px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.media-link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+
+	transition: background-color 250ms $timing-function;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+	}
+
+	.icon-media {
+		display: flex;
+		width: 20px;
+		height: 20px;
+		fill: $third-text-color;
+	}
+}
