@@ -1,5 +1,8 @@
-@import './base/global';
 @import './utils/variables';
+@import './base/global';
+@import './utils/breakpoints';
+@import './utils/placeholders';
+@import './components/container';
 // @import './base/normalize';
 @import './components/section';
 @import './components/page-header';
