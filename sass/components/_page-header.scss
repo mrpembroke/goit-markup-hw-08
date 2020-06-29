@@ -29,6 +29,7 @@
 /* Site-nav Site-nav Site-nav*/
 
 .site-nav {
+	@extend %list;
 	display: flex;
 	margin-left: 80px;
 
@@ -113,6 +114,8 @@
 }
 
 .address-header {
+	@extend %list;
+
 	display: flex;
 
 	.address-item + .address-item {

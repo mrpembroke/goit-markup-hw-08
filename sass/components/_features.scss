@@ -1,6 +1,8 @@
 /* Features Features Features*/
 
 .features-list {
+	@extend %list;
+
 	display: flex;
 
 	.features-title {

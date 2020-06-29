@@ -24,6 +24,8 @@
 /* Portfolio title */
 
 .products-list {
+	@extend %list;
+
 	display: flex;
 	flex-wrap: wrap;
 
@@ -103,6 +105,8 @@
 }
 
 .portfolio-btns {
+	@extend %list;
+
 	display: flex;
 	margin-bottom: 50px;
 	justify-content: center;
@@ -134,6 +138,8 @@
 }
 
 .products-card {
+	@extend %link;
+
 	display: block;
 
 	&:focus {

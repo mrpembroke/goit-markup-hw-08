@@ -3,6 +3,8 @@
 	border-top: 1px solid #ececec;
 
 	.works-list {
+		@extend %list;
+
 		display: flex;
 		color: $third-text-color;
 	}
