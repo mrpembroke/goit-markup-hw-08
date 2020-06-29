@@ -1,32 +1,17 @@
 @charset "UTF-8";
 body {
-  background-color: var(--main-bgc-color);
-  color: var(--primary-text-color);
+  background-color: #ffffff;
+  color: #212121;
   font-family: Roboto, sans-serif;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
-.link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+body.modal-open {
+  overflow: hidden;
 }
 
 /* Центрирование на странице */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: 1px solid green; */
-}
-
 /* Вжать img в контейнер */
 .img {
   display: block;
@@ -34,7 +19,7 @@ body {
   height: auto;
 }
 
-/* Скрыть визуально текст */
+/* Скрыть визуально контент */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,6 +29,37 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.site-nav, .address-header, .features-list, .works .works-list, .team-list, .team-list .socials, .clients-list, .footer-section .sec-address .address-footer, .media .media-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* Section Section Section*/
