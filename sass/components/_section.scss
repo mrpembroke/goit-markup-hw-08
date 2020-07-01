@@ -1,12 +1,21 @@
 /* Section Section Section*/
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .section-title {
 	margin-top: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 
 	font-weight: 700;
 	font-size: 36px;
