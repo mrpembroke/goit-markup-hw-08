@@ -7,7 +7,8 @@
 	background-color: $secondary-bgc-color;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 2;
+	// line-height: 2;
+	line-height: 1.62;
 	text-align: center;
 	border: none;
 	border-radius: 4px;
@@ -26,11 +27,22 @@
 .products-list {
 	@extend %list;
 
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	// @media screen and (min-width: 1200px) {
+	// 	margin: px;
+	// }
 
 	.products-img {
 		display: block;
+		width: 100%;
 		height: 294px;
 	}
 	.card-title {
@@ -111,14 +123,44 @@
 	margin-bottom: 50px;
 	justify-content: center;
 
-	.btns-item + .btns-item {
-		margin-left: 8px;
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		justify-content: start;
+
+		.btns-item:nth-child(-n + 3) {
+			margin-right: 8px;
+			margin-bottom: 15px;
+		}
+
+		.btns-item:nth-child(4) {
+			margin-right: 8px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.btns-item + .btns-item {
+			margin-left: 8px;
+		}
 	}
 }
 
 .products-item {
-	width: calc((100% - 60px) / 3);
-	margin-right: 30px;
+	width: 100%;
+
+	// @media screen and (max-width: 767px) {
+	// 	margin-bottom: 15px;
+	// }
+
+	@media screen and (min-width: 768px) {
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 6 * 15px) / 3);
+	}
+
+	// margin-right: 30px;
 	margin-bottom: 30px;
 
 	border-top-left-radius: 5px;
@@ -129,18 +171,20 @@
 		box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 	}
 
-	&:nth-child(3n) {
-		margin-right: 0;
-	}
-	&:nth-last-child(-n + 3) {
-		margin-bottom: 0;
-	}
+	// &:nth-child(3n) {
+	// 	margin-right: 0;
+	// }
+	// &:nth-last-child(-n + 3) {
+	// 	margin-bottom: 0;
+	// }
 }
 
 .products-card {
 	@extend %link;
 
-	display: block;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 
 	&:focus {
 		box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -155,7 +199,11 @@
 
 /* ------- РАМКА КАРТОЧКИ ------- */
 .card-content {
+	// фича от переполнения. карточка адаптируется под конткнт
+	flex-grow: 1;
+
 	padding: 20px 24px;
+
 	border-right-width: 1px;
 	border-right-style: solid;
 	border-right-color: #eeeeee;
