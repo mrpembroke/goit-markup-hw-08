@@ -10,9 +10,14 @@
 	}
 }
 
+.page-header {
+	position: relative;
+}
+
 .main-header {
-	display: flex;
+	// display: flex;
 	align-items: center;
+	justify-content: space-between;
 
 	border-bottom: 1px solid #ececec;
 }
@@ -20,6 +25,8 @@
 .main-nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	min-height: 80px;
 }
 
 .main-address {
@@ -30,18 +37,38 @@
 
 .site-nav {
 	@extend %list;
-	display: flex;
-	margin-left: 80px;
 
-	.nav-item + .nav-item {
-		margin-left: 50px;
+	display: flex;
+	// margin-left: 80px;
+
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-left: 80px;
+
+		.nav-item + .nav-item {
+			margin-left: 50px;
+		}
 	}
 }
 
 .site-nav .link {
 	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	// padding-top: 32px;
+	// padding-bottom: 32px;
+
+	@media screen and (max-width: 767px) {
+		display: inline-flex;
+		padding-top: 40px;
+		padding-bottom: 8px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 
 	color: inherit;
 	font-weight: 500;
@@ -76,6 +103,20 @@
 }
 
 /* Address Address Address*/
+
+.address-item {
+	@media screen and (max-width: 767px) {
+		& + & {
+			margin-top: 16px;
+		}
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		& + & {
+			margin-top: 10px;
+		}
+	}
+}
 
 .header-link {
 	color: $secondary-text-color;
@@ -118,7 +159,18 @@
 
 	display: flex;
 
-	.address-item + .address-item {
-		margin-left: 30px;
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+		padding-top: 60px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 1200px) {
+		.address-item + .address-item {
+			margin-left: 30px;
+		}
 	}
 }
