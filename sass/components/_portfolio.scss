@@ -120,12 +120,13 @@
 	@extend %list;
 
 	display: flex;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	justify-content: center;
 
 	@media screen and (max-width: 767px) {
 		flex-wrap: wrap;
 		justify-content: start;
+		margin-bottom: 40px;
 
 		.btns-item:nth-child(-n + 3) {
 			margin-right: 8px;
@@ -141,6 +142,10 @@
 		.btns-item + .btns-item {
 			margin-left: 8px;
 		}
+	}
+
+	@media screen and (min-width: 1170px) {
+		margin-bottom: 50px;
 	}
 }
 
