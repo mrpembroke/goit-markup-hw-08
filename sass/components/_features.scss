@@ -48,7 +48,6 @@
 		width: 70px;
 		height: 70px;
 		margin: 25px 102px;
-		// margin: 102px;
 	}
 }
 
@@ -61,7 +60,7 @@
 	@media screen and (min-width: 1170px) {
 		width: calc((100% - 8 * 15px) / 4);
 	}
-	// width: calc((100% - 90px) / 4);
+
 	// &:not(:last-child) {
 	// 	margin-bottom: 30px;
 	// }
