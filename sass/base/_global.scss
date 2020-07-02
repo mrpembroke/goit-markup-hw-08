@@ -7,9 +7,10 @@ body {
 	letter-spacing: 0.03em;
 }
 
-// body.modal-open {
-// 	overflow: hidden;
-// }
+// буквально запрещаем контенту страницы прокручиваться с модалкой
+body.modal-open {
+	overflow: hidden;
+}
 
 // .link {
 // 	color: inherit;
