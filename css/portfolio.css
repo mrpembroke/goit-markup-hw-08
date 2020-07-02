@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Центрирование на странице */
 /* Вжать img в контейнер */
 .img {
@@ -476,7 +480,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -489,6 +493,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    margin-bottom: 40px;
   }
   .portfolio-btns .btns-item:nth-child(-n + 3) {
     margin-right: 8px;
@@ -502,6 +507,12 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio-btns .btns-item + .btns-item {
     margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .portfolio-btns {
+    margin-bottom: 50px;
   }
 }
 
@@ -753,7 +764,6 @@ body {
 }
 
 .subscribe .subscribe-item {
-  margin-right: 10px;
   padding: 18px 12px;
   width: 450px;
   height: 50px;
@@ -764,9 +774,16 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe .subscribe-item {
+    margin-right: 20px;
+  }
+}
+
 @media screen and (min-width: 1170px) {
   .subscribe .subscribe-item {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -788,6 +805,23 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .subscribe-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-btn .subscribe-icon {
