@@ -1,4 +1,8 @@
 .logo-footer {
+	// display: flex;
+	margin-left: auto;
+	margin-right: auto;
+
 	color: $accent-color;
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -8,6 +12,27 @@
 
 	.color {
 		color: $third-text-color;
+	}
+}
+
+.aaa {
+	@media screen and (min-width: 768px) and (max-width: 1169px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	@media screen and (min-width: 1170px) {
+		display: flex;
+		align-items: baseline;
+	}
+}
+
+.bbb {
+	@media screen and (min-width: 1170px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
 	}
 }
 
@@ -29,7 +54,7 @@
 }
 
 .page-footer {
-	height: 252px;
+	// height: 252px;
 	color: $third-text-color;
 	background-color: $footer-bgc-color;
 
@@ -47,13 +72,16 @@
 		line-height: 1.71;
 	}
 
-	.footer-section {
-		padding-top: 60px;
-	}
+	// .footer-section {
+	// 	padding-top: 60px;
+	// }
 }
 
 .footer-section .sec-address {
 	width: 230px;
+
+	margin-left: auto;
+	margin-right: auto;
 
 	.address-footer {
 		@extend %list;
@@ -61,17 +89,31 @@
 }
 
 .main-footer {
-	display: flex;
-	padding-bottom: 28px;
+	// display: flex;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (max-width: 1169px) {
+		text-align: center;
+	}
 }
 
 .media {
-	margin-top: 72px;
-	margin-left: 69px;
+	// margin-top: 72px;
+	// margin-left: 69px;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 60px;
+	}
+
+	@media screen and (min-width: 1170px) {
+		margin-left: 70px;
+	}
 
 	.media-list {
 		@extend %list;
 		display: flex;
+		justify-content: center;
 
 		.media-item + .media-item {
 			margin-left: 10px;
@@ -80,8 +122,9 @@
 }
 
 .socials-title {
+	// margin-top: 60px;
 	margin-top: 0;
-	margin-bottom: 21px;
+	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
