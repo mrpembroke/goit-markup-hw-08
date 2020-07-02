@@ -1,7 +1,7 @@
 .works {
 	border-top: 1px solid #ececec;
 
-	@media screen and (max-width: 1199px) {
+	@media screen and (max-width: 1170px) {
 		display: none;
 	}
 
@@ -35,7 +35,7 @@
 }
 
 .works-item {
-	width: calc((100% - 60px) / 3);
+	width: calc((100% - 6 * 15px) / 3);
 	height: 294px;
 
 	& + & {
