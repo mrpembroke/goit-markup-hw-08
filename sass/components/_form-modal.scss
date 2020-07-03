@@ -2,7 +2,7 @@
 
 .modal {
 	padding: 40px;
-	width: 450px;
+	width: 100%;
 
 	background-color: $main-bgc-color;
 	border-radius: 4px;
@@ -12,6 +12,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
+
+		width: 450px;
 
 		transform: translate(-50%, -50%) scale(1);
 	}
