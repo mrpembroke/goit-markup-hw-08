@@ -114,9 +114,13 @@
 .modal-input {
 	margin: 0;
 	padding: 12px 42px;
-	width: 370px;
+	width: 100%;
 	height: 40px;
 	/* position: relative; */
+
+	@media screen and (min-width: 768px) {
+		width: 370px;
+	}
 
 	@media screen and (min-width: 1170px) {
 		width: 448px;
