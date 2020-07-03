@@ -8,7 +8,7 @@
 		padding-bottom: 204px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1170px) {
 		padding-top: 200px;
 		padding-bottom: 280px;
 	}
@@ -30,7 +30,7 @@
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1170px) {
 			width: 696px;
 
 			font-size: 44px;
@@ -78,7 +78,7 @@
 	}
 
 	@media screen and (min-width: 1170px) {
-		width: 1200px;
+		max-width: 1600px;
 	}
 
 	background-color: #2f303a;
@@ -87,25 +87,4 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
-	// @media screen and (min-width: 480px) {
-	// 	padding-top: 118px;
-	// 	padding-bottom: 118px;
-	// 	height: 400px;
-	// 	max-width: 480px;
-	// }
-
-	// @media screen and (min-width: 768px) {
-	// 	padding-top: 118px;
-	// 	padding-bottom: 118px;
-	// 	height: 400px;
-	// 	max-width: 768px;
-	// }
-
-	// @media screen and (min-width: 1200px) {
-	// 	padding-top: 200px;
-	// 	padding-bottom: 200px;
-	// 	height: 600px;
-	// 	max-width: 1600px;
-	// }
 }
