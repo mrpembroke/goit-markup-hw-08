@@ -28,10 +28,10 @@
 }
 
 .menu-container {
+	z-index: 10;
+
 	background-color: $main-bgc-color;
-	// padding: 20px;
 	text-align: center;
-	// font-size: 20px;
 
 	&.is-open {
 		display: block;
